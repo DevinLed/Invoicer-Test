@@ -9,10 +9,10 @@ export default function Footer({ name, address, website, email, phone, bankName,
             <span className="font-bold">Your Name:</span> {name}
           </li>
           <li>
-            <span className="font-bold">Your Address:</span> {address}
+            <span className="ml-2 font-bold">Your Address:</span> {address}
           </li>
           <li>
-            <span className="font-bold">Your email:</span> {email}
+            <span className="ml-2 font-bold">Your email:</span> {email}
           </li>
           <li>
             <span className="font-bold">Phone Number:</span> {phone}
