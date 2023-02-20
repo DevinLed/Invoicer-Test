@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Table({ list }) {
+export default function Table({ list, total }) {
   return (
     <>
       <table width="100%" className="mb-10">
@@ -12,7 +12,7 @@ export default function Table({ list }) {
             <td className="font-bold">Amount</td>
           </tr>
         </thead>
-        {list.map(({ id, description, price, quantity, amount }) => (
+        {list.map(({ id, description, quantity, price, amount }) => (
           <React.Fragment key={id}>
             <tbody>
               <tr>
@@ -25,6 +25,11 @@ export default function Table({ list }) {
           </React.Fragment>
         ))}
       </table>
+      <div>
+        <h2 className="flex items-end justify-end text-gray-800 text-4xl font-bold">
+          CAD {total.toLocaleString()}
+        </h2>
+      </div>
     </>
-  );
+  )
 }
